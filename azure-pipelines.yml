@@ -22,7 +22,6 @@ steps:
     restoreSolution: '$(solution)'
 - task: VSTest@3
   inputs:
-    testSelector: 'testRun'
     searchFolder: '$(System.DefaultWorkingDirectory)'
     runTestsInIsolation: true
     codeCoverageEnabled: true
